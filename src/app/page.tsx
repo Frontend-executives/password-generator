@@ -1,10 +1,15 @@
 {
   /* eslint-disable max-len */
 }
+
 import Image from 'next/image'
 import { ReactElement } from 'react'
 
+import { sum } from '@/modules/Core/utils/sum'
+
 const Home = (): ReactElement => {
+  console.log(sum(10, 10))
+
   return (
     <main className='flex min-h-screen flex-col items-center justify-between p-24'>
       <div className='lg:flex z-10 w-full max-w-5xl items-center justify-between font-mono text-sm'>
