@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import { JetBrains_Mono } from 'next/font/google'
 import { ReactElement, ReactNode } from 'react'
 
+import { StoreProvider } from '@/modules/Core/providers/StoreProvider'
+
 import './globals.css'
 
 const jetBrainsMono = JetBrains_Mono({ subsets: ['latin'], weight: '700' })
@@ -24,7 +26,9 @@ const RootLayout = ({
 }>): ReactElement => {
   return (
     <html lang='en'>
-      <body className={bodyClassName}>{children}</body>
+      <StoreProvider>
+        <body className={bodyClassName}>{children}</body>
+      </StoreProvider>
     </html>
   )
 }
