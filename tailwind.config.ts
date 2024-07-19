@@ -23,6 +23,15 @@ const config: Config = {
         'ui-orange': '#FB7C58',
         'ui-yellow': '#F8CD65',
       },
+      fontSize: {
+        '16px': '16px',
+        '18px': '18px',
+        '24px': '24px',
+        '32px': '32px',
+      },
+      margin: {
+        '134px': '134px',
+      },
     },
   },
   plugins: [],

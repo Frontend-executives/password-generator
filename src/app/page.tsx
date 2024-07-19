@@ -1,9 +1,13 @@
 import { ReactElement } from 'react'
 
-import { sum } from '@/modules/Core/utils/sum'
+import { Title } from '@/modules/Core/components/Title'
 
 const Home = (): ReactElement => {
-  return <main>{sum(10, 10)}</main>
+  return (
+    <main>
+      <Title />
+    </main>
+  )
 }
 
 export default Home
