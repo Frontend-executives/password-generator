@@ -14,7 +14,7 @@
     "build": "next build",
     "start": "next start",
     "prepare": "husky install",
-    "analyze": "$env:ANALYZE=\"true\"; npm run build"
+    "analyze": "set ANALYZE=true && npm run build"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^14.1.1",
